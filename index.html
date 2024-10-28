@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form onsubmit="return handleLogin(event)">
+        <h2>Login Form</h2>
+        <p>Ви можете написати пароль, але тільки один раз. Щоб змінити його, увійдіть у код і розкоментуйте //localStorage.removeItem("user"); щоб видалити старий.</p>
+        <input type="text" id="login" placeholder="Enter your login" required>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <button type="submit">Login</button>
+        <p class="message" id="message"></p>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
